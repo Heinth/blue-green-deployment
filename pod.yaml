@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: blue
+  name: blue
+  namespace: blue-green
+spec:
+  containers:
+  - image: 3237/bluegreen:v1
+    name: blue
